@@ -15,8 +15,6 @@ $.ajax({
      console.log(sortedErtes);
      dataset1 = sortedErtes.slice(0,21);
   })
-  // Code to run if the request fails; the raw request and
-  // status codes are passed to the function
   .fail(function( xhr, status, errorThrown ) {
     alert( "Sorry, there was a problem!" );
     console.log( "Error: " + errorThrown );
@@ -97,7 +95,6 @@ dataset = {
 
         var bubble = d3.pack(dataset)
             .size([svgWidth, svgHeight])
-            /*.padding(1.5);*/
 
         var nodes = d3.hierarchy(dataset)
             .sum(function(d) { 
