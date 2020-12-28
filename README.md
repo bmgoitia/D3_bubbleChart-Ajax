@@ -1,1 +1,1 @@
-Lorem ipsum
+D3.js bubble chart
